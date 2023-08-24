@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/superdev-tech/nuxt-facebook-chat" target="_blank" rel="noopener noreferrer">
-    <img style="width:250px" src="https://raw.githubusercontent.com/superdev-tech/nuxt-facebook-chat/main/nuxt-facebook-chat-logo.png" alt="nuxt-facebook-chat logo">
+    <img style="width:150px" src="https://raw.githubusercontent.com/superdev-tech/nuxt-facebook-chat/main/nuxt-facebook-chat-logo.png" alt="nuxt-facebook-chat logo">
   </a>
 </p>
 <br/>
