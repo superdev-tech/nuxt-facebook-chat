@@ -14,19 +14,18 @@
 
 # Nuxt Facebook Chat
 
-nuxt-facebook-chat: A Nuxt 3 module designed as a thin wrapper component of Facebook's Customer Chat JavaScript SDK. This module makes it incredibly easy for users to integrate Facebook's chat UI directly into their Nuxt 3 applications. With simple installation and convenient configuration options, users can effortlessly display the Facebook chat interface without the need for additional coding. Enhance user interaction and engagement with this seamless integration. for doing amazing things.
+`nuxt-facebook-chat` is a specialized Nuxt 3 module designed for effortless integration with Facebook's Customer Chat SDK. Crafted explicitly for Nuxt 3 projects, it simplifies the embedding process, reducing tedious installation steps. By incorporating the Facebook chat UI, user interactions are enriched. Save time and boost user engagement in your Nuxt 3 application with this streamlined module.
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-  <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-facebook-chat?file=playground%2Fapp.vue) -->
-  <!-- - [📖 &nbsp;Documentation](https://example.com) -->
+- [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-facebook-chat?file=playground%2Fapp.vue)
 
 ## Features
 
-<!-- Highlight some of the features your module provide here -->
-
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+⛰ Effortless Integration: Designed specifically for Nuxt 3, allowing seamless and straightforward integration with minimal setup.
+🚠 Flexible Configuration: Easily customize your chat experience through simple prop-based settings.
+🌲 Client-Side Optimized: Ensures that the chat is rendered client-side to prevent any server-side issues and ensure compatibility.
+🌟 Comprehensive Options: Rich set of options derived from the official Facebook Chat Plugin documentation, giving you full control over the chat experience.
+🛠 TypeScript Support: Leveraging TypeScript for safer code and better developer experience.
+📖 Extensive Documentation: Comprehensive guidelines and examples to get you started in no time.
 
 ## Quick Setup
 
@@ -51,9 +50,65 @@ export default defineNuxtConfig({
 });
 ```
 
-That's it! You can now use Nuxt Facebook Chat in your Nuxt app ✨
+## Usage
 
-## Development
+To use this module in your Nuxt 3 project, ensure that you only render it on the client side:
+
+```ts
+<template>
+  <div>
+    <!-- Ensure the chat is rendered client-side -->
+    <client-only>
+      <nuxt-facebook-chat :options="options" />
+    </client-only>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { NuxtFacebookChatOptions } from 'nuxt-facebook-chat';
+
+// Define your chat options
+const options: NuxtFacebookChatOptions = {
+  pageId: "100180625030536",  // Your Facebook Page ID
+  locale: "th_TH",            // Set the locale for the chat
+  themeColor: "#E04040",      // Customize the chat theme color
+};
+</script>
+```
+
+### Options
+
+For the options prop, you should use the NuxtFacebookChatOptions interface. Here are the details:
+
+- pageId (required): The ID of your Facebook Page.
+- elementId (optional): The ID for the chat element.
+- locale (optional): The locale for the chat. Defaults to "en_US".
+- version (optional): The version of the Facebook SDK. Defaults to the latest available.
+- themeColor (optional): Color of the chat theme. Defaults to "#333333".
+- loggedInGreeting (optional): The greeting text for logged-in users.
+- loggedOutGreeting (optional): The greeting text for logged-out users.
+- greetingDialogDisplay (optional): The way the greeting dialog is displayed. Options: "show", "fade", "hide", or "icon".
+- greetingDialogDelay (optional): The delay for the greeting dialog.
+- ref (optional): A reference string.
+
+For a more detailed understanding of each prop and its possible values, you can refer to the official [Facebook Chat Plugin documentation](https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin#steps).
+
+### Whitelisting Domains for Facebook's Customer Chat SDK
+
+To ensure the smooth functionality of the Facebook Customer Chat SDK on your website, it's crucial to whitelist your domain. Whitelisting guarantees that the chat plugin will display and operate without any disruptions on your site.
+
+**Steps to Whitelist your Domain:**
+
+1. Navigate to your Facebook Page settings.
+2. In the left column, click on "Advanced Messaging."
+3. Under the "Whitelisted Domains" section, enter your website's domain.
+4. Click "Save."
+
+By following these steps, you've ensured that the Facebook chat plugin will work seamlessly on your site without any potential display or functionality issues.
+
+## Contributing
+
+If you want to improve or fix something in the module, feel free to open issues or pull requests.
 
 ```bash
 # Install dependencies

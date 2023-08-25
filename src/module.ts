@@ -1,9 +1,9 @@
 import { defineNuxtModule, createResolver, addComponent } from "@nuxt/kit";
 import { name, version } from "../package.json";
 
-export interface ModuleOptions {}
+export type { NuxtFacebookChatOptions } from "./runtime/components/nuxt-facebook-chat";
 
-export default defineNuxtModule<ModuleOptions>({
+export default defineNuxtModule({
   meta: {
     name,
     version,

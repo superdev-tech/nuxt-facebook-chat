@@ -1,17 +1,18 @@
 <template>
   <div>
-    Nuxt module playground!
-
     <client-only>
-      <nuxt-facebook-chat
-        page-id="100180625030536"
-        color="#333333"
-        locale="th_TH"
-        element-id="fb-chat"
-        version="v17.0"
-      />
+      <nuxt-facebook-chat :options="options" />
     </client-only>
   </div>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+// import { NuxtFacebookChatOptions } from 'nuxt-facebook-chat';
+import { NuxtFacebookChatOptions } from "../src/module";
+
+const options: NuxtFacebookChatOptions = {
+  pageId: "100180625030536",
+  locale: "th_TH",
+  themeColor: "#E04040",
+};
+</script>
