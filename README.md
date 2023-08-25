@@ -16,7 +16,7 @@
 
 `nuxt-facebook-chat` is a specialized Nuxt 3 module designed for effortless integration with Facebook's Customer Chat SDK. Crafted explicitly for Nuxt 3 projects, it simplifies the embedding process, reducing tedious installation steps. By incorporating the Facebook chat UI, user interactions are enriched. Save time and boost user engagement in your Nuxt 3 application with this streamlined module.
 
-- [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-facebook-chat?file=playground%2Fapp.vue)
+- [🏀 Online playground](https://stackblitz.com/edit/nuxt-starter-trutjc?file=app.vue)
 
 ## Features
 
