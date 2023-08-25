@@ -20,12 +20,16 @@
 
 ## Features
 
-⛰ Effortless Integration: Designed specifically for Nuxt 3, allowing seamless and straightforward integration with minimal setup.
-🚠 Flexible Configuration: Easily customize your chat experience through simple prop-based settings.
-🌲 Client-Side Optimized: Ensures that the chat is rendered client-side to prevent any server-side issues and ensure compatibility.
-🌟 Comprehensive Options: Rich set of options derived from the official Facebook Chat Plugin documentation, giving you full control over the chat experience.
-🛠 TypeScript Support: Leveraging TypeScript for safer code and better developer experience.
-📖 Extensive Documentation: Comprehensive guidelines and examples to get you started in no time.
+- ⛰ Effortless Integration: Designed specifically for Nuxt 3, allowing seamless and straightforward integration with minimal setup.
+
+- 🚠 Flexible Configuration: Easily customize your chat experience through simple prop-based settings.
+
+- 🌲 Client-Side Optimized: Ensures that the chat is rendered client-side to prevent any server-side issues and ensure compatibility.
+
+- 🌟 Comprehensive Options: Rich set of options derived from the official Facebook Chat Plugin documentation, giving you full control over the chat experience.
+
+- 🛠 TypeScript Support: Leveraging TypeScript for safer code and better developer experience.
+  📖 Extensive Documentation: Comprehensive guidelines and examples to get you started in no time.
 
 ## Quick Setup
 
