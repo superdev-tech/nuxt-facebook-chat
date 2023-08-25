@@ -82,7 +82,7 @@ const options: NuxtFacebookChatOptions = {
 
 ### Options
 
-For the options prop, you should use the NuxtFacebookChatOptions interface. Here are the details:
+For the options prop, you should use the `NuxtFacebookChatOptions` interface. Here are the details:
 
 - pageId (required): The ID of your Facebook Page.
 - elementId (optional): The ID for the chat element.
