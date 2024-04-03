@@ -36,14 +36,7 @@
 1. Add `nuxt-facebook-chat` dependency to your project
 
 ```bash
-# Using pnpm
-pnpm add -D nuxt-facebook-chat
-
-# Using yarn
-yarn add --dev nuxt-facebook-chat
-
-# Using npm
-npm install --save-dev nuxt-facebook-chat
+npx nuxi@latest module add nuxt-facebook-chat
 ```
 
 2. Add `nuxt-facebook-chat` to the `modules` section of `nuxt.config.ts`
