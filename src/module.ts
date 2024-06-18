@@ -9,7 +9,7 @@ export default defineNuxtModule({
     version,
     configKey: "nuxtFacebookChat",
     compatibility: {
-      nuxt: "^3.6.0",
+      nuxt: ">=3.6.0",
     },
   },
   setup() {
